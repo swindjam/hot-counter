@@ -1,0 +1,9 @@
+.component-container {
+  border: solid 1px #ccc;
+  width: 80%;
+  margin: auto;
+  padding: 20px; }
+  .component-container .component-count {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center; }
