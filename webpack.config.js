@@ -1,12 +1,14 @@
-// const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
-    entry: "./src/entry.js",
+    entry: {
+      main: "./src/entry.js",
+      component: './src/componentEntry.js'
+    },
 
     output: {
-        path: __dirname + "./build",
-        filename: "main.js",
+        path: __dirname + "/build",
+        filename: "[name].js",
         publicPath: "/build"
     },
 
